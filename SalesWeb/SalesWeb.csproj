@@ -136,8 +136,15 @@
     <Compile Include="Migrations\202001192050046_Initial.Designer.cs">
       <DependentUpon>202001192050046_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001200014009_OtherEntities.cs" />
+    <Compile Include="Migrations\202001200014009_OtherEntities.Designer.cs">
+      <DependentUpon>202001200014009_OtherEntities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Enums\SaleStatus.cs" />
+    <Compile Include="Models\SalesRecord.cs" />
+    <Compile Include="Models\Seller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202001192050046_Initial.resx">
       <DependentUpon>202001192050046_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001200014009_OtherEntities.resx">
+      <DependentUpon>202001200014009_OtherEntities.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

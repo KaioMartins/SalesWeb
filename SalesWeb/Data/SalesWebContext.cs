@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using SalesWeb.Models;
 
 namespace SalesWeb.Data
 {
@@ -20,5 +21,8 @@ namespace SalesWeb.Data
         }
 
         public System.Data.Entity.DbSet<SalesWeb.Models.Department> Departments { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
+
     }
 }
